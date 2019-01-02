@@ -1,13 +1,3 @@
-/*!
- * Interval Game v1.0.0
- * Copyright 2018 
- *
- * Freely distributable under the MIT license.
- *
- * Full details and documentation:
- * http://greggfine.github.io/
- */
-
 (function() {
 
 "use strict";

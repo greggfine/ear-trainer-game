@@ -454,9 +454,12 @@ html {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Roboto;
-	background-color: #394B1D;
+	font-family: Arial, san-serif;
+	/* font-family: Roboto; */
+	background-color: #f0f9e2;
+	/* background-color: #394B1D; */
 }
+
 
 .container {
 	max-width: 800px;
@@ -465,8 +468,11 @@ html {
 	margin: 50px auto;
 	border-radius: 6px;
 	background-color: #BFE641;
-	box-shadow: 16px 17px 8px #00000040;
+  box-shadow: 16px 17px 8px #00000040;
+  padding-bottom: 40px;
 }
+
+
 
 h1 {
 	margin-top: 20px;
@@ -492,7 +498,7 @@ i {
 #random-int-button {
 	font-size: 1.5rem;
 	display: block;
-	margin:  -20px auto 20px auto;
+	margin:  -20px auto 40px auto;
 	outline: none;
 	padding: 20px;
 	border-radius: 5px;
@@ -513,7 +519,7 @@ i {
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
-	margin: auto;
+	margin: auto auto 36px auto;
 	max-width: 80%;
 	flex-wrap: wrap;
 }
@@ -532,6 +538,11 @@ i {
   background-color: #fff; 
 }
 
+#interval-game-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 p {
 	text-align: center;
 	font-size: 1.2rem;
@@ -540,22 +551,42 @@ p {
 
 #result {
 	font-weight: bold;
-	font-style: italic;
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 150px;
+  margin: auto;
+  padding: 6px;
+}
+
+#waveform-header {
+  /* border: 1px solid #000; */
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3a3737;
 }
 
 .waveform-selector {
-	max-width: 100px;
+	/* max-width: 100px; */
 	margin: auto;
-	list-style-type: none;
+  list-style-type: none;
+  display: flex;
+  /* border: 1px solid #000; */
+  justify-content: space-around;
+  width: 540px;
+}
+
+.waveform-type svg{
+  width: 80px;
 }
 
 .waveform-type:hover {
-	cursor: pointer;
-	width: 105%;
+  cursor: pointer;
+  transform: scale(1.2)
+	/* width: 105%; */
 }
 
 .waveform-type:active {
-	width: 150%;
+  /* width: 150%; */
+  /* transform: scale(1.2) */
 }
 
 input[type="range"]{

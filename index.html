@@ -15,16 +15,17 @@
 	  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
 	
-	<link rel="stylesheet" href="hotSneaks.css">
+	<!-- <link rel="stylesheet" href="hotSneaks.css"> -->
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<h1>Interval Game</h1>	
+<h1 id="interval-game-header">Interval Game</h1>	
 
 
 <!-- WAVEFORM SVGs-->
+<h2 id="waveform-header">Choose Your Waveform</h2>
 <ul class="waveform-selector">
 	<li class="waveform-type">
 		<svg  id="sine" class="svg-display" viewBox="0 0 200 200">
@@ -61,15 +62,17 @@
 	</li>
 </ul>
 
+<!-- <input type="range" id="gainDial" class="dial"> -->
+
 <div class="container">
 
 	<div class="social-media-links">
-		<a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+		<!-- <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
 		<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-		<a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a> -->
 	</div>
 
-	<img src="logo.svg" alt="Hidden Tiger Music Logo">
+	<!-- <img src="logo.svg" alt="Hidden Tiger Music Logo"> -->
 
 	<input id="gainDial" class="dial" data-min="0" data-max="1" value="1" data-width="100" data-step="0.01" data-fgColor="green" data-rotation="anticlockwise">
 
