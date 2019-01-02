@@ -1,0 +1,24 @@
+h1 {
+	color: red;
+}
+
+#square {
+	border: 1px solid;
+	width: 250px;
+}
+
+#triangle {
+	border: 1px solid;
+	width: 250px;
+}
+
+#sawtooth {
+	border: 1px solid;
+	width: 250px;
+}
+
+
+#sine {
+	border: 1px solid;
+	width: 200px;
+}
