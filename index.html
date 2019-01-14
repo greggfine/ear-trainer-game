@@ -16,7 +16,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
 	
 	<!-- <link rel="stylesheet" href="hotSneaks.css"> -->
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -62,23 +63,23 @@
 	</li>
 </ul>
 
-<!-- <input type="range" id="gainDial" class="dial"> -->
+<ul id="waveform-names" >
+	<li class="waveform-hidden">Sine</li>
+	<li class="waveform-hidden">Triangle</li>
+	<li class="waveform-hidden">Square</li>
+	<li class="waveform-hidden">Sawtooth</li>
+</ul>
 
 <div class="container">
 
-	<div class="social-media-links">
-		<!-- <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-		<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-		<a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a> -->
+	<div class="control-panel">
+		<span id="volume-slider-text">Volume:</span> <input type="range" id="gainSlider" value="1" min=0 max=1 step=0.010>
 	</div>
 
-	<!-- <img src="logo.svg" alt="Hidden Tiger Music Logo"> -->
 
-	<input id="gainDial" class="dial" data-min="0" data-max="1" value="1" data-width="100" data-step="0.01" data-fgColor="green" data-rotation="anticlockwise">
-
-	<p id="points-display">Points: </p>
-	<span id="num-points"></span>
-	<span id="total-count"></span>
+	<!-- <p id="points-display">Points: </p> -->
+	<!-- <span id="num-points"></span>
+	<span id="total-count"></span> -->
 
 	<button id="random-int-button"  >
 		<i class="fa fa-music" aria-hidden="true"></i>
@@ -117,7 +118,7 @@
 
 	</div>
 
-	<p id="result" class="z-depth-5"></p>
+	<p id="result" class="z-depth-5 hidden"></p>
 
 </div>
 	
