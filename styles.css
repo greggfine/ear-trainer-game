@@ -3,9 +3,7 @@ html {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Arial, san-serif;
-	/* font-family: Roboto; */
 	background-color: #f0f9e2;
-	/* background-color: #394B1D; */
 }
 
 
@@ -60,7 +58,7 @@ i {
 }
 
 #random-int-button:hover {
-  background-color: #3a3737;;
+  background-color: green;
   cursor: pointer;
   color: #fff;
 }
@@ -148,11 +146,9 @@ p {
 }
 
 .waveform-selector {
-	/* max-width: 100px; */
 	margin: 0 auto 20px auto;
   list-style-type: none;
   display: flex;
-  /* border: 1px solid #000; */
   justify-content: space-around;
   width: 540px;
 }
@@ -164,12 +160,6 @@ p {
 .waveform-type:hover {
   cursor: pointer;
   transform: scale(1.2)
-	/* width: 105%; */
-}
-
-.waveform-type:active {
-  /* width: 150%; */
-  /* transform: scale(1.2) */
 }
 
 #volume-slider-text {
@@ -222,5 +212,21 @@ input[type="range"]{
 	color: #000;
 }
 
+@media (max-width: 620px){
+	
+	.waveform-selector {
+		justify-content: flex-start;
+		max-width: 240px;
+		flex-wrap: wrap;
+		height: 200px;
+	}
 
+	.waveform-type svg{
+			margin-right: 35px;
+	}
+
+	.waveform-type:hover {
+		transform: scale(1.1)
+	}
+}
 
