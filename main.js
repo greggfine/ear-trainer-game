@@ -168,11 +168,7 @@ BiquadFilterNode.type and OscillatorNode.type.
     window.OfflineAudioContext = webkitOfflineAudioContext;
   }
 
-// }(window));
-
-// (function() {
-
-//   "use strict";
+  // ==============================================================================
 
   let count = 0,
     count2 = 0;
@@ -434,4 +430,4 @@ var playState = false;
   // }
 
 }(window));
-// }());
+
